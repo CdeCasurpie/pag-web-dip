@@ -6,33 +6,47 @@ class ProjectsManager {
         this.projectsData = [
             {
                 id: 1,
-                title: "Casa Residencial Moderna",
-                shortDescription: "Diseño contemporáneo de 200m² con espacios abiertos y aprovechamiento de luz natural.",
+                title: "Multifamiliar Moderno",
+                shortDescription: "Proyecto integral de vivienda unifamiliar que combina modernidad y funcionalidad.",
                 longDescription: "Proyecto integral de vivienda unifamiliar que combina modernidad y funcionalidad. El diseño arquitectónico incorpora amplios ventanales para maximizar la entrada de luz natural, espacios abiertos que favorecen la integración familiar, y acabados de primera calidad. Se desarrollaron planos arquitectónicos completos, diseño estructural, instalaciones sanitarias y eléctricas, además de la supervisión completa de la obra.",
-                location: "San Juan de Miraflores, Lima",
-                date: "2024",
-                area: "200 m²",
-                contractor: "Constructora González SAC",
+                location: "San Miguel, Lima",
+                date: "2013",
+                area: "15x8.50 m²",
+                contractor: null,
                 images: [
-                    "images/WhatsApp Image 2025-12-13 at 1.46.20 PM.jpeg",
-                    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80",
-                    "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80",
-                    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1920&q=80"
+                    "images/proy1_img1.png",
+                    "images/proy1_img2.png",
+                    "images/proy1_img3.png"
                 ]
             },
             {
                 id: 2,
-                title: "Remodelación Integral Residencial",
+                title: "Ampliación de multifamiliar",
                 shortDescription: "Ampliación y remodelación de vivienda familiar con nuevas instalaciones.",
-                longDescription: "Proyecto de remodelación y ampliación que transformó completamente una vivienda existente. Se realizó la redistribución de espacios interiores, ampliación de 80m² adicionales, actualización completa de instalaciones eléctricas y sanitarias, y mejoramiento de fachadas. El proyecto incluyó el diseño de nuevos ambientes como sala de estar ampliada, cocina moderna integrada y dos dormitorios adicionales con baños propios.",
-                location: "Miraflores, Lima",
-                date: "2023",
-                area: "280 m²",
-                contractor: "Obras & Proyectos SAC",
+                longDescription: "Proyecto de remodelación y ampliación que transformó completamente una vivienda existente. Se realizó la redistribución de espacios interiores, ampliación de 130m² adicionales, actualización completa de instalaciones eléctricas y sanitarias, y mejoramiento de fachadas. El proyecto incluyó el diseño de nuevos ambientes como sala de estar ampliada, cocina moderna integrada y dos dormitorios adicionales con baños propios.",
+                location: "San Juan de Miraflores, Lima",
+                date: "2009",
+                area: "160 m²",
+                contractor: null,
                 images: [
-                    "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1920&q=80",
-                    "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1920&q=80",
-                    "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=1920&q=80"
+                    "images/proy2_img1.png",
+                    "images/proy2_img2.png",
+                    "images/proy2_img3.png"
+                ]
+            },
+            {
+                id: 3,
+                title: "Local Comercial - Centro Empresarial",
+                shortDescription: "Diseño funcional para espacio comercial con optimización de flujos de trabajo.",
+                longDescription: "Desarrollo de proyecto arquitectónico para local comercial de uso múltiple. El diseño contempla áreas de atención al público, oficinas administrativas, almacenes y servicios higiénicos. Se optimizaron los flujos de circulación para mejorar la experiencia del cliente y la eficiencia operativa. Incluye diseño de fachada comercial moderna, iluminación especializada y sistemas de climatización. Se gestionaron todos los trámites municipales correspondientes.",
+                location: "San Juan de Miraflores, Lima",
+                date: "2018",
+                area: "50x65 m²",
+                contractor: null,
+                images: [
+                    "images/proy3_img1.png",
+                    "images/proy3_img2.png",
+                    "images/proy3_img3.png"
                 ]
             },
             {
@@ -45,9 +59,9 @@ class ProjectsManager {
                 area: "350 m²",
                 contractor: null,
                 images: [
-                    "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80",
-                    "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1920&q=80",
-                    "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1920&q=80"
+                    "images/proy4_img1.png",
+                    "images/proy4_img2.png",
+                    "images/proy4_img3.png"
                 ]
             }
         ];
@@ -224,7 +238,7 @@ class ProjectsManager {
                     <i class="fas fa-ruler-combined"></i>
                 </div>
                 <div class="metadata-content">
-                    <span class="metadata-label">Área Construida</span>
+                    <span class="metadata-label">Área del Terreno</span>
                     <span class="metadata-value">${project.area}</span>
                 </div>
             </div>

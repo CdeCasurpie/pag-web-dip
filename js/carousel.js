@@ -27,16 +27,12 @@ class HeroCarousel {
                 alt: 'Proyecto Arquitectónico 1'
             },
             {
-                url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80',
+                url: 'images/proy1_img3.png',
                 alt: 'Diseño Residencial Moderno'
             },
             {
-                url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80',
-                alt: 'Arquitectura Contemporánea'
-            },
-            {
-                url: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1920&q=80',
-                alt: 'Proyecto de Construcción'
+                url: 'images/proy2_img3.png',
+                alt: 'Ampliación Multifamiliar'
             }
         ];
         
