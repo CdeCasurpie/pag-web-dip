@@ -23,15 +23,15 @@ class HeroCarousel {
         // Array de imágenes del carrusel
         this.slides = [
             {
-                url: 'images/WhatsApp Image 2025-12-13 at 1.46.20 PM.jpeg',
+                url: 'images/quesigalacumbia.png',
                 alt: 'Proyecto Arquitectónico 1'
             },
             {
-                url: 'images/proy1_img3.png',
+                url: 'images/proy1_img2.png',
                 alt: 'Diseño Residencial Moderno'
             },
             {
-                url: 'images/proy2_img3.png',
+                url: 'images/proy2_img2.png',
                 alt: 'Ampliación Multifamiliar'
             }
         ];

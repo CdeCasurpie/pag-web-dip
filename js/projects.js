@@ -50,7 +50,7 @@ class ProjectsManager {
                 ]
             },
             {
-                id: 3,
+                id: 4,
                 title: "Local Comercial - Centro Empresarial",
                 shortDescription: "Diseño funcional para espacio comercial con optimización de flujos de trabajo.",
                 longDescription: "Desarrollo de proyecto arquitectónico para local comercial de uso múltiple. El diseño contempla áreas de atención al público, oficinas administrativas, almacenes y servicios higiénicos. Se optimizaron los flujos de circulación para mejorar la experiencia del cliente y la eficiencia operativa. Incluye diseño de fachada comercial moderna, iluminación especializada y sistemas de climatización. Se gestionaron todos los trámites municipales correspondientes.",
@@ -62,6 +62,21 @@ class ProjectsManager {
                     "images/proy4_img1.png",
                     "images/proy4_img2.png",
                     "images/proy4_img3.png"
+                ]
+            },
+            {
+                id: 5,
+                title: "Local Comercial - Centro Empresarial",
+                shortDescription: "Diseño funcional para espacio comercial con optimización de flujos de trabajo.",
+                longDescription: "Desarrollo de proyecto arquitectónico para local comercial de uso múltiple. El diseño contempla áreas de atención al público, oficinas administrativas, almacenes y servicios higiénicos. Se optimizaron los flujos de circulación para mejorar la experiencia del cliente y la eficiencia operativa. Incluye diseño de fachada comercial moderna, iluminación especializada y sistemas de climatización. Se gestionaron todos los trámites municipales correspondientes.",
+                location: "San Isidro, Lima",
+                date: "2023",
+                area: "350 m²",
+                contractor: null,
+                images: [
+                    "images/proy5_img3.png",
+                    "images/proy5_img1.png",
+                    "images/proy5_img2.png"
                 ]
             }
         ];
