@@ -1,0 +1,33 @@
+# P&R Arquitectos - robots.txt
+# Configuración SEO para motores de búsqueda
+
+User-agent: *
+Allow: /
+
+# Archivos importantes para SEO
+Allow: /index.html
+Allow: /styles.css
+Allow: /script.js
+Allow: /manifest.json
+Allow: /sw.js
+
+# Secciones importantes del sitio
+Allow: /#inicio
+Allow: /#servicios
+Allow: /#proyectos
+Allow: /#nosotros
+Allow: /#contacto
+
+# Bloquear archivos del sistema si existen
+Disallow: /.htaccess
+Disallow: /.git/
+Disallow: /README.md
+
+# Sitemap (cuando esté disponible)
+# Sitemap: https://www.prauitectos.com/sitemap.xml
+
+# Información adicional
+# Este sitio web pertenece a P&R Arquitectos S.R.L.
+# RUC: 20511083967
+# Ubicación: San Juan de Miraflores, Lima, Perú
+# Especialistas en arquitectura e ingeniería desde 2005
