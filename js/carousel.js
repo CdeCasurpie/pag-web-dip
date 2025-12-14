@@ -27,6 +27,10 @@ class HeroCarousel {
                 alt: 'Proyecto Arquitectónico 1'
             },
             {
+                url: 'images/proy5_img3.png',
+                alt: 'Elsa Elsa'
+            },
+            {
                 url: 'images/proy1_img2.png',
                 alt: 'Diseño Residencial Moderno'
             },
