@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ===== SISTEMA DE TEMAS =====
 function initializeTheme() {
-    const savedTheme = localStorage.getItem('theme') || detectSystemTheme();
+    const savedTheme = localStorage.getItem('theme') || 'light' || detectSystemTheme();
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = themeToggle?.querySelector('i');
     
