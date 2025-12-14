@@ -23,7 +23,7 @@ class HeroCarousel {
         // Array de imágenes del carrusel
         this.slides = [
             {
-                url: 'WhatsApp Image 2025-12-13 at 1.46.20 PM.jpeg',
+                url: 'images/WhatsApp Image 2025-12-13 at 1.46.20 PM.jpeg',
                 alt: 'Proyecto Arquitectónico 1'
             },
             {

@@ -14,7 +14,7 @@ class ProjectsManager {
                 area: "200 m²",
                 contractor: "Constructora González SAC",
                 images: [
-                    "WhatsApp Image 2025-12-13 at 1.46.20 PM.jpeg",
+                    "images/WhatsApp Image 2025-12-13 at 1.46.20 PM.jpeg",
                     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80",
                     "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80",
                     "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1920&q=80"
