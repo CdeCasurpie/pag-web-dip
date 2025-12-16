@@ -44,8 +44,8 @@ class ProjectsManager {
                 area: "50x65 m²",
                 contractor: null,
                 images: [
-                    "images/proy3_img1.png",
                     "images/proy3_img2.png",
+                    "images/proy3_img1.png",
                     "images/proy3_img3.png"
                 ]
             },
