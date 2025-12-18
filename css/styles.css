@@ -3,6 +3,7 @@
 html { font-size: 14px; }
 
 :root {
+    --hero-background: rgba(0, 0, 0, 0.65);
     --primary-color: #131a22;
     --secondary-color: #1a2129;
     --accent-color: #3C4B9C;
@@ -20,6 +21,7 @@ html { font-size: 14px; }
 
 /* ===== MODO CLARO ===== */
 [data-theme="light"] {
+    --hero-background: rgba(255,255,255,.65);
     --primary-color: #ffffff;
     --secondary-color: #f8fafc;
     --accent-color: #3C4B9C;
@@ -343,7 +345,7 @@ body {
 
 .opacity {
     opacity: .2;
-    background-color: white;
+    background-color: var(--primary-color);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -417,7 +419,7 @@ body {
 }
 
 .hero-content{
-    background: rgba(255,255,255,.65);
+    background: var(--hero-background);
     border-radius: 35px;
     padding: 50px;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.419);
@@ -1423,7 +1425,7 @@ body {
     }
 
     .hero-content{
-        background: rgba(255,255,255,.65);
+        background: var(--hero-background);
         border-radius: 0px;
         padding: 50px;
         box-shadow: 0 0 100px rgba(0, 0, 0, 0.419);
