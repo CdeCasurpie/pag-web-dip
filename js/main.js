@@ -128,15 +128,33 @@ const SITE_DATA = {
                 id: 5,
                 icon: "fas fa-balance-scale",
                 title: "Peritajes Arquitectónicos",
-                description: "Servicios especializados de peritaje para abogados y procesos legales.",
-                featured: false,
+                description: "Tazación y valuación de inmuebles con fines comerciales y legales.",
+                featured: true,
+                features: [
+                    "Tazación de bienes inmuebles (viviendas, oficinas, locales comerciales, entre otros)"
+                ],
                 linkText: "Más información"
             },
+            {
+                id: 7,
+                icon: "fas fa-check-circle",
+                title: "Revisores Urbanos",
+                description: "Revisión técnica de proyectos de edificación y habilitación urbana para verificar el cumplimiento del Reglamento Nacional de Edificaciones y normas urbanísticas vigentes.",
+                features: [
+                  "Verificación técnica del proyecto",
+                  "Emisión de Informe Técnico Favorable (ITF)",
+                  "Agilización del trámite de licencias municipales",
+                  "Certificación en modalidades B, C y D",
+                  "Evaluación en categorías I, II y III"
+                ],
+                featured: false,
+                linkText: "Más información"
+            },              
             {
                 id: 6,
                 icon: "fas fa-users",
                 title: "Consultoría Profesional",
-                description: "Asesoría técnica especializada para arquitectos e ingenieros.",
+                description: "Ofrecemos consultorías en diversas áreas relacionadas con la arquitectura y la ingeniería desde la concepción, ejecucion e inscripción en los registros públicos.",
                 featured: false,
                 linkText: "Más información"
             }
@@ -165,7 +183,7 @@ const SITE_DATA = {
             },
             {
                 number: "04",
-                title: "Supervisión",
+                title: "Supervisión y Ejecución de Obra",
                 description: "Acompañamos la construcción hasta su finalización"
             }
         ]

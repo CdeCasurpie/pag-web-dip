@@ -5,13 +5,13 @@ class ProjectsManager {
         this.currentSlideIndex = 0;
         this.projectsData = [
             {
-                id: 1,
-                title: "Multifamiliar Moderno",
-                shortDescription: "Proyecto integral de vivienda unifamiliar que combina modernidad y funcionalidad.",
-                longDescription: "Proyecto integral de vivienda unifamiliar que combina modernidad y funcionalidad. El diseño arquitectónico incorpora amplios ventanales para maximizar la entrada de luz natural, espacios abiertos que favorecen la integración familiar, y acabados de primera calidad. Se desarrollaron planos arquitectónicos completos, diseño estructural, instalaciones sanitarias y eléctricas, además de la supervisión completa de la obra.",
+                "id": 1,
+                "title": "Multifamiliar Moderno",
+                "shortDescription": "Edificio multifamiliar contemporáneo de tres niveles que destaca por su equilibrio volumétrico y la integración de texturas naturales como piedra y madera en la fachada.",
+                "longDescription": "Este proyecto cuenta con tres departamentos independientes que se caracterizan exteriormente por un elemento vertical acristalado y el contraste material entre el revestimiento pétreo del acceso y la carpintería de madera. La edificación integra eficazmente dos estacionamientos y servicios comunes, logrando una síntesis entre funcionalidad habitacional y una estética sobria.",
                 location: "San Miguel, Lima",
                 date: "2013",
-                area: "15x8.50 m²",
+                area: "128 m²",
                 contractor: null,
                 images: [
                     "images/proy1_img1.png",
@@ -20,28 +20,27 @@ class ProjectsManager {
                 ]
             },
             {
-                id: 2,
-                title: "Ampliación de multifamiliar",
-                shortDescription: "Ampliación y remodelación de vivienda familiar con nuevas instalaciones.",
-                longDescription: "Proyecto de remodelación y ampliación que transformó completamente una vivienda existente. Se realizó la redistribución de espacios interiores, ampliación de 130m² adicionales, actualización completa de instalaciones eléctricas y sanitarias, y mejoramiento de fachadas. El proyecto incluyó el diseño de nuevos ambientes como sala de estar ampliada, cocina moderna integrada y dos dormitorios adicionales con baños propios.",
-                location: "San Juan de Miraflores, Lima",
-                date: "2009",
-                area: "160 m²",
-                contractor: null,
-                images: [
+                "id": 2,
+                "title": "Ampliación Multifamiliar",
+                "shortDescription": "Proyecto de ampliación y remodelación que transforma una estructura existente en un edificio de cinco departamentos, destacando por su fachada de texturas rugosas y vegetación integrada.",
+                "longDescription": "El proyecto representa una ampliación de vivienda unifamiliar a una multifamiliar. Desarrollado en tres pisos más azotea compuesto por 5 departamentos, unificando el volumen mediante un lenguaje de tonos tierra, jardineras centrales en voladizo y una marcada simetría vertical. El diseño optimiza la densidad habitacional integrando cerrajería de protección en planta baja y carpintería de madera en los niveles superiores, renovando la imagen urbana del predio.",
+                "location": "San Juan de Miraflores, Lima",
+                "date": "2009",
+                "area": "160 m²",
+                "contractor": null,
+                "images": [
                     "images/proy2_img1.png",
                     "images/proy2_img2.png",
                     "images/proy2_img3.png"
                 ]
-            },
-            {
-                id: 3,
-                title: "Local Comercial - Centro Empresarial",
-                shortDescription: "Diseño funcional para espacio comercial con optimización de flujos de trabajo.",
-                longDescription: "Desarrollo de proyecto arquitectónico para local comercial de uso múltiple. El diseño contempla áreas de atención al público, oficinas administrativas, almacenes y servicios higiénicos. Se optimizaron los flujos de circulación para mejorar la experiencia del cliente y la eficiencia operativa. Incluye diseño de fachada comercial moderna, iluminación especializada y sistemas de climatización. Se gestionaron todos los trámites municipales correspondientes.",
+            },{
+                "id": 3,
+                "title": "Mercado Las Flores de Villa",
+                "shortDescription": "Adecuación arquitectónica de un equipamiento comercial de dos niveles que zonifica la actividad mercantil masiva en planta baja y la gestión administrativa en el nivel superior.",
+                "longDescription": "La edificación presenta una estética funcionalista industrial, definida por una modulación perimetral de cerramientos metálicos enrollables y una cubierta ligera de acero que jerarquiza volumétricamente el segundo nivel. El programa arquitectónico optimiza la densidad operativa albergando 153 unidades comerciales en el primer piso (24 exteriores y 129 interiores), articulando las oficinas administrativas y terrazas superiores mediante núcleos de circulación vertical estratégicos.",
                 location: "San Juan de Miraflores, Lima",
                 date: "2018",
-                area: "50x65 m²",
+                area: "3250 m²",
                 contractor: null,
                 images: [
                     "images/proy3_img2.png",
