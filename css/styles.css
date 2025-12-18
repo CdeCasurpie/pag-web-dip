@@ -574,7 +574,7 @@ body {
     background: var(--gradient-accent);
 }
 
-.service-card.featured {
+.service-card.larged {
     grid-column: span 2;
     background: var(--gradient-accent);
     transform: scale(1.02);
@@ -1320,7 +1320,7 @@ body {
         gap: 40px;
     }
     
-    .service-card.featured {
+    .service-card.larged {
         grid-column: span 1;
     }
     

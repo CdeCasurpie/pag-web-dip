@@ -6,12 +6,12 @@ const SITE_DATA = {
     company: {
         name: "P&R ARQUITECTOS",
         fullName: "P&R Arquitectos S.R.L.",
-        tagline: "Transformamos tus ideas en proyectos reales",
+        tagline: "Transforma tus ideas en proyectos reales",
         ruc: "20511083967",
         founded: "2005",
         experience: "20+",
-        description: "Desde 2005, P&R Arquitectos se ha consolidado como una empresa líder en el sector de la arquitectura e ingeniería en Lima. Somos especialistas en actividades de arquitectura, ingeniería y consultoría técnica.",
-        description2: "Estamos registrados como Buen Contribuyente desde 2022 y contamos con todas las certificaciones necesarias para brindar servicios profesionales de la más alta calidad."
+        description: "25 años de experiencia creando espacios únicos y funcionales. Especialistas en proyectos arquitectónicos, obras de edificación y gestiones públicas.",
+        description2: "",
     },
 
     // Contacto
@@ -80,7 +80,8 @@ const SITE_DATA = {
                     "Proyectos de educación"
                 ],
                 featured: true,
-                buttonText: "Solicitar Cotización"
+                buttonText: "Solicitar Cotización",
+                large: true
             },
             {
                 id: 45,
@@ -93,24 +94,33 @@ const SITE_DATA = {
             {
                 id: 2,
                 icon: "fas fa-clipboard-list",
-                title: "Trámites Municipales",
+                title: "Trámites Municipales y de Registros Públicos",
                 description: "Te ayudamos con todos los trámites y gestiones municipales necesarios para tu proyecto.",
-                featured: false,
+                features: [
+                    "Licencias de edificación, remodelación, ampliación, demolición",
+                    "Declaratoria de fábrica",
+                    "Independización",
+                    "Conformidad de obra"
+                ],
+                featured: true,
                 linkText: "Más información"
             },
             {
                 id: 3,
                 icon: "fas fa-hard-hat",
                 title: "Supervisión de Obra",
-                description: "Supervisión profesional durante la construcción para garantizar calidad y cumplimiento.",
-                featured: false,
+                description: "Supervisión profesional durante el proceso de construcción para garantizar la calidad y el cumplimiento del proyecto aprobado.",
+                featured: true,
+                features: [
+                    "Superviciones públicas y privadas de proyectos en general",
+                ],
                 linkText: "Más información"
             },
             {
                 id: 4,
                 icon: "fas fa-search",
-                title: "Inspección Municipal",
-                description: "Inspecciones técnicas y reportes profesionales para cumplir con normativas municipales.",
+                title: "Inspección Municipal de Obra (IMO)",
+                description: "Toda obra que cuenta con licencia de edificación requiere obligatoriamente un IMO en modalidades A, B, C o D (Decreto Supremo N° 002-2017-Vivienda).",
                 featured: false,
                 linkText: "Más información"
             },
@@ -377,36 +387,31 @@ class ContentRenderer {
         
         const grid = document.querySelector('.services-grid');
         grid.innerHTML = services.items.map(service => {
-            const featuredClass = service.featured ? 'featured' : '';
-            
-            if (service.featured) {
-                return `
-                    <div class="service-card ${featuredClass}">
-                        <div class="service-icon">
-                            <i class="${service.icon}"></i>
-                        </div>
-                        <h3>${service.title}</h3>
-                        <p>${service.description}</p>
-                        <ul class="service-features">
-                            ${service.features.map(feature => `
-                                <li><i class="fas fa-check"></i> ${feature}</li>
-                            `).join('')}
-                        </ul>
-                        <a href="https://wa.me/${this.data.contact.whatsappLink}" class="service-btn" target="_blank">${service.buttonText}</a>
+            const largedClass = service.large ? 'larged' : '';
+          
+            return `
+                <div class="service-card ${largedClass}">
+                    <div class="service-icon">
+                        <i class="${service.icon}"></i>
                     </div>
-                `;
-            } else {
-                return `
-                    <div class="service-card ${featuredClass}">
-                        <div class="service-icon">
-                            <i class="${service.icon}"></i>
-                        </div>
-                        <h3>${service.title}</h3>
-                        <p>${service.description}</p>
-                        <a href="https://wa.me/${this.data.contact.whatsappLink}" class="service-link" target="_blank">${service.linkText}</a>
-                    </div>
-                `;
-            }
+                    <h3>${service.title}</h3>
+                    <p>${service.description}</p>
+                    ${service.features && service.features.length > 0 ? `
+                    <ul class="service-features">
+                        ${service.features.map(feature => `
+                            <li><i class="fas fa-check"></i> ${feature}</li>
+                        `).join('')}
+                    </ul>
+                    ` : ''}
+                    ${service.buttonText ? `
+                    <a href="https://wa.me/${this.data.contact.whatsappLink}" class="service-btn" target="_blank">${service.buttonText}</a>
+                    ` : ''}
+
+                    ${service.linkText ? `
+                    <a href="https://wa.me/${this.data.contact.whatsappLink}" class="service-link" target="_blank">${service.linkText}</a>
+                    ` : ''}
+                </div>
+            `;
         }).join('');
     }
 
