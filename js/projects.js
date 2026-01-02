@@ -77,7 +77,53 @@ class ProjectsManager {
                     "images/proy5_img2.png",
                     "images/proy5_img3.png"
                 ]
+            },
+            {
+                "id": 6,
+                "title": "Complejo Educativo San Juan de Lurigancho",
+                "shortDescription": "Diseño de infraestructura educativa moderna caracterizado por una volumetría contemporánea y un imponente ingreso jerarquizado mediante muro cortina de vidrio.",
+                "longDescription": "Este proyecto de arquitectura institucional plantea un edificio de cuatro niveles diseñado para responder a las demandas pedagógicas contemporáneas en un entorno urbano denso. La propuesta estética se fundamenta en un juego de volúmenes contrastados en tonos gris antracita y blanco, utilizando acabados de alta durabilidad y bajo mantenimiento. El elemento arquitectónico protagonista es el núcleo de acceso principal, resuelto con un sofisticado muro cortina de vidrio que dota al edificio de transparencia, modernidad y una escala monumental hacia la vía pública. El diseño integra ventanales horizontales rítmicos que garantizan una iluminación natural óptima y ventilación cruzada en todas las aulas, creando un ambiente de aprendizaje confortable y tecnológicamente integrado.",
+                "location": "San Juan de Lurigancho, Lima",
+                "date": "2017",
+                "area": "Privada",
+                "contractor": null,
+                "images": [
+                    "images/proy6_img1.png",
+                    "images/proy6_img2.png",
+                    "images/proy6_img3.png"
+                ]
+            },
+            {
+                "id": 7,
+                "title": "Centro Recreativo, Cultural y Juvenil Santa Eulalia",
+                "shortDescription": "Estudio y programación arquitectónica de un complejo integral destinado al desarrollo social, cultural y deportivo de la juventud.",
+                "longDescription": "Este proyecto de tesis desarrolla una propuesta exhaustiva para un equipamiento metropolitano diseñado para potenciar el bienestar de la población juvenil. El programa arquitectónico se fundamenta en un análisis estadístico de la población nacional y local hasta el año 2000, identificando necesidades críticas de infraestructura social. La propuesta técnica destaca por una diversificada zona de esparcimiento que incluye gimnasio, sauna y salas de juegos, complementada con un complejo deportivo de alto nivel que contempla canchas de tenis, bádminton, frontón, básquetbol y fútbol con medidas reglamentarias. El diseño se orienta a crear un núcleo de interacción comunitaria que integre la recreación física con espacios culturales en un entorno natural privilegiado.",
+                "location": "Santa Eulalia, Huarochirí",
+                "date": "2000",
+                "area": "Área programada integral",
+                "contractor": null,
+                "images": [
+                    "images/quesigalacumbia.png",
+                    "images/proy7_img1.png",
+                    "images/proy7_img2.png"
+                ]
+            },
+            {
+                "id": 8,
+                "title": "Residencia de Campo & Bungalows Asia",
+                "shortDescription": "Exclusivo complejo residencial de campo de 20,384 m² que integra una vivienda principal con piscina, bungalows independientes y áreas administrativas bajo un lenguaje arquitectónico rústico-contemporáneo.",
+                "longDescription": "Este ambicioso proyecto de vivienda de campo se despliega sobre una vasta extensión de terreno en el distrito de Asia, proponiendo un conjunto arquitectónico que equilibra el lujo y la naturaleza. El programa se organiza alrededor de una imponente casa principal de dos niveles con azotea, definida por el uso de piedra natural, techos de teja y amplios ventanales que capturan la iluminación del entorno. El conjunto incluye dos bungalows privados, un chalet independiente y oficinas anexas, todos articulados por una piscina central con acabados en piedra y extensas áreas verdes. Los interiores destacan por sus espacios de doble altura con acabados en madera y una transición fluida hacia el exterior, logrando un refugio rural de alta sofisticación y confort térmico.",
+                "location": "Distrito de Asia, Cañete",
+                "date": "2023",
+                "area": "20,384 m²",
+                "contractor": null,
+                "images": [
+                    "images/proy8_img1.png",
+                    "images/proy8_img2.png",
+                    "images/proy8_img3.png"
+                ]
             }
+
         ];
         
         this.init();

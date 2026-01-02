@@ -143,9 +143,7 @@ const SITE_DATA = {
                 features: [
                   "Verificación técnica del proyecto",
                   "Emisión de Informe Técnico Favorable (ITF)",
-                  "Agilización del trámite de licencias municipales",
-                  "Certificación en modalidades B, C y D",
-                  "Evaluación en categorías I, II y III"
+                  "Agilización del trámite de licencias municipales"
                 ],
                 featured: false,
                 linkText: "Más información"
