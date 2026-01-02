@@ -36,8 +36,8 @@ class ProjectsManager {
             },{
                 "id": 3,
                 "title": "Mercado Las Flores de Villa",
-                "shortDescription": "Adecuación arquitectónica de un equipamiento comercial de dos niveles que zonifica la actividad mercantil masiva en planta baja y la gestión administrativa en el nivel superior.",
-                "longDescription": "La edificación presenta una estética funcionalista industrial, definida por una modulación perimetral de cerramientos metálicos enrollables y una cubierta ligera de acero que jerarquiza volumétricamente el segundo nivel. El programa arquitectónico optimiza la densidad operativa albergando 153 unidades comerciales en el primer piso (24 exteriores y 129 interiores), articulando las oficinas administrativas y terrazas superiores mediante núcleos de circulación vertical estratégicos.",
+                "shortDescription": "Equipamiento comercial de dos niveles definido por una imponente cobertura metálica de grandes luces, diseñada para maximizar la espacialidad operativa del mercado y albergar áreas administrativas en una planta superior de alta eficiencia estructural.",
+                "longDescription": "La edificación destaca por una propuesta de arquitectura industrial fundamentada en el uso de estructuras metálicas de grandes luces. Este sistema de techumbre de acero permite generar plantas libres de gran altura, optimizando la ventilación natural y la fluidez del tránsito masivo. La solución estructural no solo define la estética funcionalista del conjunto, sino que jerarquiza volumétricamente el segundo nivel, reduciendo la carga puntual y facilitando la organización de 153 unidades comerciales en planta baja (24 exteriores y 129 interiores). La ligereza del acero en el nivel superior articula las oficinas administrativas y terrazas, logrando un equilibrio entre durabilidad técnica y flexibilidad operativa frente al uso intensivo del mercado.",
                 location: "San Juan de Miraflores, Lima",
                 date: "2018",
                 area: "3250 m²",
@@ -49,33 +49,33 @@ class ProjectsManager {
                 ]
             },
             {
-                id: 4,
-                title: "Local Comercial - Centro Empresarial",
-                shortDescription: "Diseño funcional para espacio comercial con optimización de flujos de trabajo.",
-                longDescription: "Desarrollo de proyecto arquitectónico para local comercial de uso múltiple. El diseño contempla áreas de atención al público, oficinas administrativas, almacenes y servicios higiénicos. Se optimizaron los flujos de circulación para mejorar la experiencia del cliente y la eficiencia operativa. Incluye diseño de fachada comercial moderna, iluminación especializada y sistemas de climatización. Se gestionaron todos los trámites municipales correspondientes.",
-                location: "San Isidro, Lima",
-                date: "2023",
-                area: "350 m²",
-                contractor: null,
-                images: [
+                "id": 4,
+                "title": "Proyecto Multifamiliar San Martín",
+                "shortDescription": "Modernización arquitectónica y reconversión de vivienda unifamiliar en un edificio multifamiliar contemporáneo con núcleo de acceso independiente.",
+                "longDescription": "Esta intervención consistió en la transformación integral de una vivienda preexistente en un edificio multifamiliar de cuatro niveles, optimizando el uso del suelo en un terreno de 140 m². El diseño destaca por la modernización total de la fachada, utilizando una volumetría limpia y una paleta de colores neutros. El elemento protagonista es el núcleo de circulación vertical independiente, jerarquizado visualmente mediante un muro cortina de cristal que permite la independencia de los departamentos y dota de iluminación natural a las escaleras. La propuesta integra amplios ventanales y balcones metálicos que renuevan la estética urbana del sector, garantizando ventilación y confort en cada unidad residencial.",
+                "location": "San Martín de Porres, Lima",
+                "date": "2017",
+                "area": "140 m²",
+                "contractor": null,
+                "images": [
                     "images/proy4_img1.png",
                     "images/proy4_img2.png",
                     "images/proy4_img3.png"
                 ]
             },
             {
-                id: 5,
-                title: "Local Comercial - Centro Empresarial",
-                shortDescription: "Diseño funcional para espacio comercial con optimización de flujos de trabajo.",
-                longDescription: "Desarrollo de proyecto arquitectónico para local comercial de uso múltiple. El diseño contempla áreas de atención al público, oficinas administrativas, almacenes y servicios higiénicos. Se optimizaron los flujos de circulación para mejorar la experiencia del cliente y la eficiencia operativa. Incluye diseño de fachada comercial moderna, iluminación especializada y sistemas de climatización. Se gestionaron todos los trámites municipales correspondientes.",
-                location: "San Isidro, Lima",
-                date: "2023",
-                area: "350 m²",
-                contractor: null,
-                images: [
-                    "images/proy5_img3.png",
+                "id": 5,
+                "title": "Master Suite & Spa Residencial",
+                "shortDescription": "Diseño de interiores de vanguardia en una suite de 30 m² que integra un área de spa privada y baño de concepto abierto con acabados de alta gama.",
+                "longDescription": "Este proyecto de interiorismo transforma un espacio residencial en una experiencia de lujo hotelero dentro del hogar. La propuesta se centra en la integración de un jacuzzi de hidromasaje revestido en mármol y piedra natural, complementado por un sistema de iluminación LED indirecta que acentúa las texturas. El diseño destaca por el uso extensivo de palillería de madera y muros de piedra rústica, creando una atmósfera cálida y orgánica. El programa optimiza los 30 m² al incorporar un baño moderno con ducha de cristal templado y mobiliario a medida, logrando una transición fluida entre la zona de descanso y el área de bienestar sin sacrificar la sofisticación.",
+                "location": "San Juan de Miraflores, Lima",
+                "date": "2012",
+                "area": "30 m²",
+                "contractor": null,
+                "images": [
                     "images/proy5_img1.png",
-                    "images/proy5_img2.png"
+                    "images/proy5_img2.png",
+                    "images/proy5_img3.png"
                 ]
             }
         ];
