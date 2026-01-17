@@ -248,7 +248,7 @@ class ProjectsManager {
                         <div class="modal-metadata"></div>
                         
                         <div class="modal-actions">
-                            <a href="https://wa.me/51998845602" class="btn btn-primary" target="_blank">
+                            <a href="https://wa.me/51945756713" class="btn btn-primary" target="_blank">
                                 <i class="fab fa-whatsapp"></i> Consultar Proyecto Similar
                             </a>
                         </div>

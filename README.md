@@ -366,9 +366,8 @@ The application implements various optimization strategies targeting:
 | Established | 2005 |
 | Experience | 20+ years |
 | Address | Jr. Jesús Morales Nº 536 Zona E, San Juan de Miraflores, Lima |
-| Phone | (01) 276**** |
 | WhatsApp | +51 998 845 602 |
-| Email | dip_arquitecto_@hotmail.com |
+| Email | pr.dip.arquitectos@gmail.com |
 
 **Certifications:**
 - SUNAT Good Taxpayer (Buen Contribuyente) - 2022

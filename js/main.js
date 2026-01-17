@@ -16,10 +16,9 @@ const SITE_DATA = {
 
     // Contacto
     contact: {
-        phone: "(01) 276****",
         whatsapp: "+51 998 845 602",
-        whatsappLink: "51998845602",
-        email: "dip_arquitecto_@hotmail.com",
+        whatsappLink: "51945756713",
+        email: "pr.dip.arquitectos@gmail.com",
         address: {
             street: "Jr. Jesús Morales Nº 536 Zona E",
             district: "San Juan de Miraflores",
@@ -200,12 +199,12 @@ const SITE_DATA = {
     // Sobre Nosotros
     about: {
         sectionTitle: "Sobre P&R Arquitectos",
-        sectionSubtitle: "20 años construyendo confianza y excelencia",
+        sectionSubtitle: "25 años construyendo confianza y excelencia",
         features: [
             {
                 icon: "fas fa-award",
                 title: "Buen Contribuyente",
-                description: "Certificados por SUNAT desde 2022"
+                description: "Certificados por SUNAT desde 2004"
             },
             {
                 icon: "fas fa-certificate",
@@ -257,11 +256,6 @@ const SITE_DATA = {
             text: "Consulta Gratuita",
             icon: "fab fa-whatsapp"
         },
-        secondaryButton: {
-            text: "Llamar Ahora",
-            icon: "fas fa-phone",
-            link: "tel:+51276****"
-        }
     },
 
     // Contacto
@@ -313,7 +307,7 @@ const SITE_DATA = {
 
     // Footer
     footer: {
-        description: "20 años de experiencia en arquitectura e ingeniería. Transformamos ideas en proyectos reales.",
+        description: "25 años de experiencia en arquitectura e ingeniería. Transformamos ideas en proyectos reales.",
         links: {
             services: {
                 title: "Servicios",
@@ -342,7 +336,7 @@ const SITE_DATA = {
     // SEO
     seo: {
         title: "P&R Arquitectos - Diseños y Proyectos Profesionales | Lima, Perú",
-        description: "P&R Arquitectos - 20 años de experiencia en diseños arquitectónicos, proyectos de construcción, supervisión de obras y trámites municipales en Lima, Perú.",
+        description: "P&R Arquitectos - 25 años de experiencia en diseños arquitectónicos, proyectos de construcción, supervisión de obras y trámites municipales en Lima, Perú.",
         keywords: "arquitectos lima, diseño arquitectónico, proyectos construcción, trámites municipales, supervisión obras, arquitectura perú"
     }
 };
@@ -548,14 +542,6 @@ class ContentRenderer {
             </div>
             
             <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <div>
-                    <h4>Teléfono</h4>
-                    <p>${contact.phone}</p>
-                </div>
-            </div>
-            
-            <div class="contact-item">
                 <i class="fas fa-mobile-alt"></i>
                 <div>
                     <h4>WhatsApp</h4>
@@ -634,7 +620,6 @@ class ContentRenderer {
         // Contacto en footer
         const footerContact = document.querySelector('.footer-contact');
         footerContact.innerHTML = `
-            <p><i class="fas fa-phone"></i> ${contact.phone}</p>
             <p><i class="fab fa-whatsapp"></i> ${contact.whatsapp}</p>
             <p><i class="fas fa-envelope"></i> ${contact.email}</p>
         `;

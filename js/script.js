@@ -295,7 +295,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         `*Servicio:* ${serviceNames[service]}%0A` +
         `*Mensaje:* ${message}`;
     
-    const whatsappURL = `https://wa.me/51998845602?text=${whatsappMessage}`;
+    const whatsappURL = `https://wa.me/51945756713?text=${whatsappMessage}`;
     
     // Mostrar mensaje de éxito
     showNotification('Redirigiendo a WhatsApp...', 'success');
@@ -561,7 +561,7 @@ function updateMetaTags() {
     const currentSection = window.location.hash.replace('#', '');
     
     let title = 'P&R Arquitectos - Diseños y Proyectos Profesionales | Lima, Perú';
-    let description = 'P&R Arquitectos - 20 años de experiencia en diseños arquitectónicos, proyectos de construcción, supervisión de obras y trámites municipales en Lima, Perú.';
+    let description = 'P&R Arquitectos - 25 años de experiencia en diseños arquitectónicos, proyectos de construcción, supervisión de obras y trámites municipales en Lima, Perú.';
     
     if (currentSection) {
         switch (currentSection) {
