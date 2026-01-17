@@ -71,7 +71,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1000000;
     box-shadow: var(--shadow-medium);
     backdrop-filter: blur(10px);
 }
@@ -1454,4 +1454,8 @@ body {
     .about-placeholder {
         padding: 40px 25px;
     }
+}
+
+.hidden {
+    display: none;
 }

@@ -39,67 +39,69 @@ const SITE_DATA = {
     hero: {
         title: "Transforma tu idea en una",
         titleHighlight: "realidad",
-        subtitle: "25 años de experiencia creando espacios únicos y funcionales. Especialistas en proyectos arquitectónicos, obras de edificación y gestiones públicas.",
+        subtitle: "25 años de experiencia en Lima creando espacios únicos y funcionales. Arquitectos especialistas en diseño de viviendas, proyectos de edificación residencial y comercial, trámites municipales y supervisión de obras en San Juan de Miraflores, Villa El Salvador y Lima Sur.",
         primaryButton: {
-            text: "Ver Servicios",
+            text: "Ver Servicios de Arquitectura",
             link: "#servicios"
         },
         secondaryButton: {
-            text: "Reserva tu consulta",
+            text: "Cotización Gratis por WhatsApp",
             icon: "fab fa-whatsapp"
         },
         stats: [
             {
                 number: "25+",
-                label: "Años de experiencia"
+                label: "Años en Lima"
             },
             {
                 number: "300+",
-                label: "Proyectos completados"
+                label: "Proyectos en Lima Sur"
             }
         ]
     },
 
     // Servicios
     services: {
-        sectionTitle: "Nuestros Servicios",
-        sectionSubtitle: "Soluciones integrales para tu proyecto arquitectónico",
+        sectionTitle: "Servicios de Arquitectura e Ingeniería en Lima",
+        sectionSubtitle: "Soluciones integrales para tu proyecto residencial o comercial",
         items: [
             {
                 id: 1,
                 icon: "fas fa-home",
                 title: "Diseño y ejecución de proyectos arquitectónicos",
-                description: "Incluimos todos los servicios necesarios para llevar a cabo el diseño y la ejecución completa de proyectos de arquitectura o ingeniería.",
+                description: "Incluimos todos los servicios necesarios para llevar a cabo el diseño arquitectónico completo y la ejecución de proyectos de arquitectura o ingeniería en Lima y Lima Sur. Planos arquitectónicos profesionales con diseño estructural, instalaciones eléctricas y sanitarias cumpliendo normativas municipales vigentes.",
                 features: [
-                    "Ejecución de obra",
+                    "Ejecución completa de obra",
                     "Viviendas unifamiliares y multifamiliares",
-                    "Viviendas campo, playa",
-                    "Ampliaciones y remodelaciones",
-                    "Proyectos comerciales",
-                    "Proyectos de educación"
+                    "Diseño de casas en campo y playa",
+                    "Ampliaciones y remodelaciones de viviendas",
+                    "Proyectos comerciales (locales, oficinas, tiendas)",
+                    "Proyectos educativos (colegios, institutos)"
                 ],
                 featured: true,
-                buttonText: "Solicitar Cotización",
+                buttonText: "Solicitar Cotización Gratuita",
                 large: true
             },
             {
                 id: 45,
                 icon: "fas fa-building",
-                title: "Ejecución de obras",
-                description: "Si cuentas con un proyecto arquitectónico o de ingeniería, nosotros nos encargamos de la ejecución integral de la obra, asegurando calidad y cumplimiento en cada etapa del proceso.",
+                title: "Ejecución de obras de construcción",
+                description: "Si cuentas con un proyecto arquitectónico o de ingeniería ya aprobado, nosotros nos encargamos de la ejecución integral de la obra de construcción, asegurando calidad profesional, cumplimiento de plazos y supervisión técnica en cada etapa del proceso constructivo.",
                 featured: false,
-                linkText: "Más información" 
+                linkText: "Consultar por WhatsApp" 
             },
             {
                 id: 2,
                 icon: "fas fa-clipboard-list",
-                title: "Trámites Municipales y de Registros Públicos",
-                description: "Te ayudamos con todos los trámites y gestiones municipales necesarios para tu proyecto.",
+                title: "Trámites Municipales y Registros Públicos",
+                description: "Gestión completa de licencias y trámites ante municipalidades de Lima. Te asesoramos y gestionamos toda la documentación necesaria para regularizar tu construcción o edificación ante las autoridades municipales y Registros Públicos.",
                 features: [
-                    "Licencias de edificación, remodelación, ampliación, demolición",
-                    "Declaratoria de fábrica",
-                    "Independización",
-                    "Conformidad de obra"
+                    "Licencias de edificación nueva",
+                    "Licencias de remodelación y ampliación",
+                    "Licencias de demolición",
+                    "Declaratoria de fábrica en Registros Públicos",
+                    "Independización de predios",
+                    "Conformidad de obra y finalización"
                 ],
                 featured: true,
                 linkText: "Más información"
@@ -107,11 +109,14 @@ const SITE_DATA = {
             {
                 id: 3,
                 icon: "fas fa-hard-hat",
-                title: "Supervisión de Obra",
-                description: "Supervisión profesional durante el proceso de construcción para garantizar la calidad y el cumplimiento del proyecto aprobado.",
+                title: "Supervisión de Obra profesional",
+                description: "Supervisión técnica profesional durante todo el proceso de construcción para garantizar la calidad constructiva, el cumplimiento del proyecto aprobado, control de materiales y verificación de normativas técnicas vigentes.",
                 featured: true,
                 features: [
-                    "Superviciones públicas y privadas de proyectos en general",
+                    "Supervisión en obras públicas y privadas",
+                    "Control de calidad de materiales de construcción",
+                    "Verificación de cumplimiento de planos",
+                    "Informes técnicos semanales con fotografías"
                 ],
                 linkText: "Más información"
             },
@@ -119,30 +124,34 @@ const SITE_DATA = {
                 id: 4,
                 icon: "fas fa-search",
                 title: "Inspección Municipal de Obra (IMO)",
-                description: "Toda obra que cuenta con licencia de edificación requiere obligatoriamente un IMO en modalidades A, B, C o D (Decreto Supremo N° 002-2017-Vivienda).",
+                description: "Toda obra de edificación que cuenta con licencia municipal requiere obligatoriamente un Inspector Municipal de Obra (IMO) en modalidades A, B, C o D según el Decreto Supremo N° 002-2017-Vivienda. Realizamos inspecciones técnicas oficiales para verificar cumplimiento normativo.",
                 featured: false,
-                linkText: "Más información"
+                linkText: "Solicitar inspección"
             },
             {
                 id: 5,
                 icon: "fas fa-balance-scale",
-                title: "Peritajes Arquitectónicos",
-                description: "Tazación y valuación de inmuebles con fines comerciales y legales.",
+                title: "Peritajes Arquitectónicos y Tasaciones",
+                description: "Tasación comercial y valuación técnica de inmuebles con fines legales, bancarios y comerciales. Servicios profesionales de peritaje arquitectónico para procesos judiciales, arbitrajes y valorización de bienes inmuebles.",
                 featured: true,
                 features: [
-                    "Tazación de bienes inmuebles (viviendas, oficinas, locales comerciales, entre otros)"
+                    "Tasación de viviendas, departamentos y casas",
+                    "Valuación de oficinas y locales comerciales",
+                    "Peritaje para procesos judiciales y legales",
+                    "Informes técnicos de valorización"
                 ],
                 linkText: "Más información"
             },
             {
                 id: 7,
                 icon: "fas fa-check-circle",
-                title: "Revisores Urbanos",
-                description: "Revisión técnica de proyectos de edificación y habilitación urbana para verificar el cumplimiento del Reglamento Nacional de Edificaciones y normas urbanísticas vigentes.",
+                title: "Revisores Urbanos certificados",
+                description: "Revisión técnica especializada de proyectos de edificación y habilitación urbana para verificar el cumplimiento estricto del Reglamento Nacional de Edificaciones (RNE) y normas urbanísticas municipales vigentes en Lima.",
                 features: [
-                  "Verificación técnica del proyecto",
+                  "Verificación técnica completa del expediente",
                   "Emisión de Informe Técnico Favorable (ITF)",
-                  "Agilización del trámite de licencias municipales"
+                  "Agilización del trámite de licencias ante municipalidades",
+                  "Revisión de planos arquitectónicos y estructurales"
                 ],
                 featured: false,
                 linkText: "Más información"
@@ -150,10 +159,10 @@ const SITE_DATA = {
             {
                 id: 6,
                 icon: "fas fa-users",
-                title: "Consultoría Profesional",
-                description: "Ofrecemos consultorías en diversas áreas relacionadas con la arquitectura y la ingeniería desde la concepción, ejecucion e inscripción en los registros públicos.",
+                title: "Consultoría Profesional en Arquitectura",
+                description: "Ofrecemos servicios de consultoría técnica especializada en diversas áreas relacionadas con la arquitectura, ingeniería y construcción: desde la concepción del proyecto, diseño arquitectónico, ejecución de obra hasta la inscripción final en Registros Públicos.",
                 featured: false,
-                linkText: "Más información"
+                linkText: "Agendar consulta"
             }
         ]
     },
