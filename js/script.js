@@ -575,7 +575,7 @@ function updateMetaTags() {
                 break;
             case 'contacto':
                 title = 'Contacto - P&R Arquitectos | Consulta Gratuita';
-                description = 'Contáctanos para una consulta gratuita. WhatsApp: +51 998 845 602. Oficina en San Juan de Miraflores, Lima.';
+                description = 'Contáctanos para una consulta gratuita. WhatsApp: +51 945 756 713. Oficina en San Juan de Miraflores, Lima.';
                 break;
         }
     }

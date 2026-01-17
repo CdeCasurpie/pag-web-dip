@@ -3,6 +3,8 @@ class ProjectsManager {
     constructor() {
         this.currentModalProject = null;
         this.currentSlideIndex = 0;
+        this.keyHandler = null; // Guardar referencia al handler
+        this.isTransitioning = false; // Prevenir clicks múltiples
         this.projectsData = [
             {
                 "id": 1,
@@ -351,26 +353,39 @@ class ProjectsManager {
         const images = this.currentModalProject.images;
         if (index < 0 || index >= images.length) return;
         
+        // Prevenir cambios durante transición
+        if (this.isTransitioning) return;
+        
+        // Si es el mismo índice, no hacer nada
+        if (this.currentSlideIndex === index) return;
+        
+        this.isTransitioning = true;
         this.currentSlideIndex = index;
         
         const modal = document.getElementById('project-modal');
         const mainImage = modal.querySelector('.gallery-image');
         const thumbnails = modal.querySelectorAll('.gallery-thumbnail');
         
-        // Actualizar imagen principal
+        // Actualizar imagen principal con fade
         mainImage.style.opacity = '0';
+        
+        // Esperar a que termine el fade out
         setTimeout(() => {
             mainImage.src = images[index];
-            mainImage.style.opacity = '1';
+            mainImage.onload = () => {
+                mainImage.style.opacity = '1';
+                this.isTransitioning = false;
+            };
+            
+            // Fallback si la imagen no carga
+            setTimeout(() => {
+                this.isTransitioning = false;
+            }, 500);
         }, 200);
         
         // Actualizar thumbnails activos
         thumbnails.forEach((thumb, i) => {
-            if (i === index) {
-                thumb.classList.add('active');
-            } else {
-                thumb.classList.remove('active');
-            }
+            thumb.classList.toggle('active', i === index);
         });
     }
     
@@ -391,23 +406,48 @@ class ProjectsManager {
         const modal = document.getElementById('project-modal');
         if (!modal) return;
         
+        // Remover event listeners anteriores si existen
+        this.removeModalEventListeners();
+        
         // Botón cerrar
         const closeBtn = modal.querySelector('.modal-close');
-        closeBtn.addEventListener('click', () => this.closeModal());
+        const closeHandler = () => this.closeModal();
+        closeBtn.removeEventListener('click', closeHandler); // Limpiar primero
+        closeBtn.addEventListener('click', closeHandler);
         
         // Overlay
         const overlay = modal.querySelector('.modal-overlay');
-        overlay.addEventListener('click', () => this.closeModal());
+        const overlayHandler = () => this.closeModal();
+        overlay.removeEventListener('click', overlayHandler); // Limpiar primero
+        overlay.addEventListener('click', overlayHandler);
         
         // Navegación de galería
         const prevBtn = modal.querySelector('.gallery-nav.prev');
         const nextBtn = modal.querySelector('.gallery-nav.next');
         
-        prevBtn.addEventListener('click', () => this.prevSlide());
-        nextBtn.addEventListener('click', () => this.nextSlide());
+        const prevHandler = () => this.prevSlide();
+        const nextHandler = () => this.nextSlide();
         
-        // Teclado
-        const keyHandler = (e) => {
+        // Remover listeners antiguos y agregar nuevos
+        prevBtn.removeEventListener('click', prevHandler);
+        nextBtn.removeEventListener('click', nextHandler);
+        prevBtn.addEventListener('click', prevHandler);
+        nextBtn.addEventListener('click', nextHandler);
+        
+        // Guardar referencias para limpieza posterior
+        this.modalHandlers = {
+            closeBtn,
+            closeHandler,
+            overlay,
+            overlayHandler,
+            prevBtn,
+            prevHandler,
+            nextBtn,
+            nextHandler
+        };
+        
+        // Teclado - Usar handler con bind para poder removerlo después
+        this.keyHandler = (e) => {
             if (!modal.classList.contains('active')) return;
             
             if (e.key === 'Escape') {
@@ -419,7 +459,40 @@ class ProjectsManager {
             }
         };
         
-        document.addEventListener('keydown', keyHandler);
+        // Remover listener anterior si existe
+        if (this.keyHandler) {
+            document.removeEventListener('keydown', this.keyHandler);
+        }
+        
+        document.addEventListener('keydown', this.keyHandler);
+    }
+    
+    removeModalEventListeners() {
+        // Remover keyboard listener
+        if (this.keyHandler) {
+            document.removeEventListener('keydown', this.keyHandler);
+            this.keyHandler = null;
+        }
+        
+        // Remover otros listeners si existen
+        if (this.modalHandlers) {
+            const { closeBtn, closeHandler, overlay, overlayHandler, prevBtn, prevHandler, nextBtn, nextHandler } = this.modalHandlers;
+            
+            if (closeBtn && closeHandler) {
+                closeBtn.removeEventListener('click', closeHandler);
+            }
+            if (overlay && overlayHandler) {
+                overlay.removeEventListener('click', overlayHandler);
+            }
+            if (prevBtn && prevHandler) {
+                prevBtn.removeEventListener('click', prevHandler);
+            }
+            if (nextBtn && nextHandler) {
+                nextBtn.removeEventListener('click', nextHandler);
+            }
+            
+            this.modalHandlers = null;
+        }
     }
     
     setupModalListeners() {
@@ -439,8 +512,13 @@ class ProjectsManager {
         modal.classList.remove('active');
         document.body.style.overflow = 'auto';
         
+        // Limpiar event listeners
+        this.removeModalEventListeners();
+        
+        // Resetear estado
         this.currentModalProject = null;
         this.currentSlideIndex = 0;
+        this.isTransitioning = false;
     }
 }
 

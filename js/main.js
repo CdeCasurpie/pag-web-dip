@@ -16,7 +16,7 @@ const SITE_DATA = {
 
     // Contacto
     contact: {
-        whatsapp: "+51 998 845 602",
+        whatsapp: "+51 945 756 713",
         whatsappLink: "51945756713",
         email: "pr.dip.arquitectos@gmail.com",
         address: {
@@ -221,7 +221,7 @@ const SITE_DATA = {
             icon: "fas fa-users",
             title: "Equipo Profesional",
             description: "Arquitectos e ingenieros con amplia experiencia",
-            src: "images/quesigalacumbia.png"
+            src: "images/image.png"
         }
     },
 
