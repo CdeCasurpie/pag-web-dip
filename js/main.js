@@ -41,11 +41,11 @@ const SITE_DATA = {
         titleHighlight: "realidad",
         subtitle: "25 años de experiencia en Lima creando espacios únicos y funcionales. Arquitectos especialistas en diseño de viviendas, proyectos de edificación residencial y comercial, trámites municipales y supervisión de obras en San Juan de Miraflores, Villa El Salvador y Lima Sur.",
         primaryButton: {
-            text: "Ver Servicios de Arquitectura",
+            text: "Ver Servicios",
             link: "#servicios"
         },
         secondaryButton: {
-            text: "Cotización Gratis por WhatsApp",
+            text: "Cotización Gratis",
             icon: "fab fa-whatsapp"
         },
         stats: [
